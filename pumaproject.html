@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUMA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+    background-color:rgb(231, 231, 198);
+    /* background-image: url(backpuma.jpg); */
+}
+
+.nav{
+    height: 110px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    
+}
+
+.nav-part-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 50px;
+    margin-left: 50px; */
+}
+
+.nav img{
+    border-radius: 10px;
+    height: 80px;
+    width: auto;
+    margin-right: 60px;
+    cursor: pointer;
+}
+
+.nav-part-1 ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-part-1 ul li{
+    margin-right: 40px;
+    font-size: 19px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+a{
+    color: black;
+    text-decoration: none;
+    font-size: 19px;
+    margin-right: 100px;
+}
+
+
+.nav-part-2 i{
+    margin-right: 40px;
+    font-size: 21px;
+    font-weight: 500;
+    cursor: pointer;
+    
+}
+
+.content{
+    height: calc(100% - 110px);
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.content-left{
+    height: 100%;
+    width: 40%;
+    padding: 80px 100px;
+}
+
+.content-left h5{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.content-left h1{
+    font-size: 55px;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+.content-left p{
+    font-size: 20px;
+    color: #000;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.btn{
+    height: 30px;
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    padding: 12px 40px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    border-top-left-radius: 0;
+}
+
+.content-right{
+    height: 100%;
+    width: 60%;
+    padding: 110px 100px;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.content-right::-webkit-scrollbar{
+    display: none;
+}
+
+.product{
+    height: 370px;
+    width: 250px;
+    background-color: #1011;
+    position: relative;
+    box-shadow: 0 5px 10px rgba(17, 0, 17, 0.3);
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.product img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+    bottom: 20%;
+}
+
+.product h4{
+    font-size: 18px;
+    text-transform: capitalize;
+    position: absolute;
+    bottom: 28%;
+}
+
+.catagory{
+    position: absolute;
+    bottom: 20%;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.color{
+    position: absolute;
+    bottom: 15%;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.price{
+    font: 18px;
+    position: absolute;
+    bottom: 5%;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+#id62{
+    height: 150px;
+    width: 100%;
+    background-color: #9f4a4a;
+    text-align: center;
+    color:rgb(230, 225, 222);
+    font-size: 26px;
+}
+button{
+    color: chocolate;
+    height: 25px;
+}
+#wg{
+
+    height: 25px;
+}
+
+#id1{
+        border: 3px solid black;
+        height: 300px;
+        width: 320px;
+        margin-left: 500px;
+        margin-top: 20px;
+
+      }
+      h1{
+        text-align: center;
+      }
+      #id3{
+        width: 250px;
+        height: 20px;
+        
+        
+      }
+      #id4{
+        width: 250px;
+        height: 20px;
+      }
+      #name{
+        padding-left: 30px;
+      }
+      #id5{
+        width: 250px;
+        height: 20px;
+      }
+      #id6{
+        color: rgb(242, 233, 239);
+        background-color: chocolate;
+        width: 90px;
+        border-radius: 5px;
+      }
+
+</style>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="nav-part-1">
+                <img src="backpuma.jpg" alt="logo">
+                <ul>
+                    <a href="#">HOME</a>
+                    <a href="menpuma.html">MEN</a>
+                    <a href="womenpuma.html">WOMEN</a>
+                    <a href="#">COLLECTION</a>
+                    <a href="#login">LOGIN</a>
+                    <input type="search" placeholder="search Puma.in" id="wg">
+                    <button>search</button>
+                    <pre>            <i class="fa fa-globe"></i></pre>  
+                    
+                   
+                </ul>
+            </div>
+                <div class="nav-part-2">
+                    <i class="ri-search-line"></i>
+                    <i class="ri-shopping-cart-2-line"></i>
+                    <i class="ri-menu-line"></i>
+                </div>
+        </div>
+        <div class="content">
+            <div class="content-left">
+                <h5>Explore limited edition</h5>
+                <h1>PUMA  limited edition</h1>
+                <p>Unleash the extraordinary. Elevate your game with puma Limited Edition. Where innovation meets style, leaving a lasting mark. Just do it.</p>
+                <button class="btn">Shop now</button>
+            </div>
+            <div class="content-right">
+                <div class="product">
+                    <img src="shoes3.jpg" alt="puma shoes">
+                    <h4>Puma Air max 1</h4>
+                    <p class="catagory">Men's shoes</p>
+                    <p class="color">Color: white</p>
+                    <p class="price">₹ 14 995</p>
+                </div>
+                
+                <div class="product">
+                    <img src="shoes5.webp" alt="puma shoes">
+                    <h4>Puma lunar roam</h4>
+                    <p class="catagory">Men's shoes</p>
+                    <p class="color">Color: sleepy blue</p>
+                    <p class="price">₹ 15 995</p>
+                </div>
+                <div class="product">
+                    <img src="sohes.jpg" alt="puma shoes">
+                    <h4>Puma nocta glide</h4>
+                    <p class="catagory">Men's shoes</p>
+                    <p class="color">Color: white</p>
+                    <p class="price">₹ 12 995</p>
+                </div>
+                <div class="product">
+                    <img src="shoes2.jpg" alt="puma shoes">
+                    <h4>Puma Terminator high</h4>
+                    <p class="catagory">Men's shoes</p>
+                    <p class="color">Color: sleepy blue</p>
+                    <p class="price">₹ 15 995</p>
+                </div>
+                <div class="product">
+                    <img src="newshoes.jpg" alt="puma shoes">
+                    <h4>Puma Air peg 2K5</h4>
+                    <p class="catagory">Men's shoes</p>
+                    <p class="color">Color: white</p>
+                    <p class="price">₹ 13 995</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+                
+
+    </div>
+    <div id="id62">Contacts us
+        <address>
+            LPU, Lovely Professional University <br>
+            Email: <a href="">abdul@Rahman.lpu.com</a><br>
+            6207566052<br>
+            pincode:841506
+        </address>
+    </div>
+    <div id="id1">
+        <h1 id="login">LOGIN</h1>
+        
+        <form action="server">
+            <div id="name">
+                <label for="id3">Name:</label>
+                <div><input type="text" id="id3"></div><br>
+                
+                <label for="id3">Phone no:</label>
+                <div><input type="text" id="id3"></div><br>
+
+                <label for="id4">Email:</label>
+                <div><input type="text" id="id4"></div><br> 
+
+                <label for="id5">Password:</label>
+                <div><input type="password" id="id5" ></div><br>
+
+                <input type="submit" id="id6">
+    </div>
+</body>
+</html>
